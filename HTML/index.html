@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC 2</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    #h {
+        display: flex;
+        justify-content: center;
+    }
+    div{
+        background-color: lightgray;
+        height: 400px;
+        border-style: dashed;
+        margin: 30px;
+        line-height: 50px;
+        text-align: center;
+    }
+    #filter, #map, #sort, #before, #nota_alunos, #nota{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <h1>POC 2</h1>
+    <h2 id="h">ARRAYS</h2>
+    <div>
+        <h1>Array Map</h1>
+        <p id="map"></p>
+    </div> 
+    <div>
+        <h1>Array Filter</h1>
+        <p><input type="number" id="verificar idade" value="24"></p>
+        <button onclick="filtro()">verify</button>
+        <p id="filter"></p>
+    </div> 
+    <div>
+        <h1>Array Sort</h1>
+        <p id="before"></p>
+        <p id="sort"></p>
+    </div>
+    <div>
+        <h1>Array Reduce</h1>
+        <p id="nota_alunos"></p>
+        <p id="nota"></p>
+    </div>
+    <script>
+        // map
+        const pessoas = [
+          {nome: "Thiago", sobrenome: "Silva"},
+          {nome: "Lucas", sobrenome: "Giovanntti"},
+          {nome: "Erik", sobrenome: "Takara"}
+        ];
+        
+        document.getElementById("map").innerHTML = pessoas.map(FullName);
+        function FullName(item) {
+          return [item.nome,item.sobrenome].join(" ");
+        }
+        // filter
+        const idades = [20,23,22];
+
+        function verify(age) {
+            return age > document.getElementById("verificar idade").value;
+        }
+
+        function filtro() {
+            document.getElementById("filter").innerHTML = idades.filter(verify);
+        }
+        
+        // sort
+        const alunos = [" Thiago Silva "," Erik Takara "," Lucas Giovannetti "];
+        document.getElementById("before").innerHTML = "Lista antes da função .sort(): " + (alunos);
+        alunos.sort();
+        document.getElementById("sort").innerHTML = "Lista após a função .sort(): " + (alunos);
+
+        // reduce
+        const notas_alunos = [
+            {aluno: "Erik Takara", nota: 7},
+            {aluno: "Lucas Giovannetti", nota: 8},
+            {aluno: "Thiago Silva", nota: 8.5}
+        ];
+
+        const initialValue = 0;
+        const sumWithInitial = notas_alunos.map(item => item.nota).reduce(
+            (accumulator, currentValue) => accumulator + currentValue,
+            initialValue
+        );
+
+        function notas(item) {
+            return [item.aluno, item.nota].join(" - ");
+        }
+
+        // Exibir as notas de cada aluno
+        document.getElementById("nota_alunos").innerHTML = notas_alunos.map(notas).join("<br>");
+
+        // Exibir a soma das notas após o reduce
+        document.getElementById("nota").innerHTML = "Nota após o .reduce(): " + sumWithInitial;
+
+        </script>
+    
+    </body>
+    
+</html>
