@@ -1,10 +1,16 @@
 # MetodosArreys
-POC 2 sobre metosdos de arrey em JS
-reduce()
+POC 2 sobre metodos de arrey em JS
+
+
+.reduce()
 Reduz o array a um único valor aplicando uma função acumulativa. Muito útil quando você quer somar, multiplicar ou combinar de um array em uma única resposta.
  ![image](https://github.com/user-attachments/assets/33ceedec-f2fc-463b-8c54-9836c81387f9)
 
+O metodo .map(function) cria uma nova arrey utilizando os dados da arrey base, o metodo não lê dados nulos e não altera a arrey original.
 1.  O .map() transforma o array original em [7, 8, 8.5] (um array apenas com as notas).
+
+![image](https://github.com/user-attachments/assets/3b407a04-741c-45c8-bb61-ffdf7b9f4696)
+
  2. O .reduce() percorre esse array:
 ⦁	Primeira iteração: accumulator é 0 (valor inicial), currentValue é 7. Então, 0 + 7 = 7
 ⦁	Segunda iteração: accumulator é 7, currentValue é 8. Então, 7 + 8 = 15
