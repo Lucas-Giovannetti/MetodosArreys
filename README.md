@@ -36,3 +36,5 @@ O que o .filter() faz aqui:
 
  
 ![image](https://github.com/user-attachments/assets/435c23f4-f43f-4472-a616-dcb8f104afd7)
+
+O "..." também conhecido como spread serve para concatenar dados de arrays, sejam elas variaveis ou retorno de funções:

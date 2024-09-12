@@ -52,6 +52,12 @@
         <p id="nota_alunos"></p>
         <p id="nota"></p>
     </div>
+    <div>
+        <h1>array Spread</h1>
+        <p id="l1"></p>
+        <p id="l2"></p>
+        <p id="resp"></p>
+    </div>
     <script>
         // map
         const pessoas = [
@@ -103,7 +109,10 @@
 
         // Exibir a soma das notas após o reduce
         document.getElementById("nota").innerHTML = "Nota após o .reduce(): " + sumWithInitial;
-
+        document.getElementById("l1").innerHTML = "Nome das pessoas: " + pessoas.map(FullName);
+        document.getElementById("l2").innerHTML = "Idade das pessoas: "+ idades;
+        const res = [...pessoas.map(FullName), ...idades];
+        document.getElementById("resp").innerHTML = "Idade e Nomes: "+ res;
         </script>
     
     </body>
