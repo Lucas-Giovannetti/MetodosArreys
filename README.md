@@ -2,7 +2,7 @@
 POC 2 sobre metodos de arrey em JS
 
 
-##.reduce()
+## .reduce()
 Reduz o array a um único valor aplicando uma função acumulativa. Muito útil quando você quer somar, multiplicar ou combinar de um array em uma única resposta.
  ![image](https://github.com/user-attachments/assets/33ceedec-f2fc-463b-8c54-9836c81387f9)
 
@@ -16,12 +16,12 @@ O metodo .map(function) cria uma nova arrey utilizando os dados da arrey base, o
 *	Segunda iteração: accumulator é 7, currentValue é 8. Então, 7 + 8 = 15
 *	Terceira iteração: accumulator é 15, currentValue é 8.5. Então, 15 + 8.5 = 23.5
 
-##.sort()
+## .sort()
 Quando o método .sort() é chamado sem uma função de comparação, ele converte os elementos do array em strings (se não forem strings) e os ordena com base na sequência de caracteres Unicode.  Isso pode levar a resultados inesperados, especialmente ao ordenar números.
 
  ![image](https://github.com/user-attachments/assets/0a869b74-12b8-439f-8d1f-8a6134a940ff)
 
-##.filter()
+## .filter()
 
  ![image](https://github.com/user-attachments/assets/c18d6622-d1d8-4d4b-b630-0bed383aa658)
 
