@@ -30,11 +30,20 @@ O que o .filter() faz aqui:
 
 ⦁	Função verify: A função verify(age) recebe cada valor do array idades como argumento (age) e compara com o valor que o usuário digitou no campo de entrada. A função retorna true se age for maior que o valor inserido.
 
-⦁	Filtro: O .filter() aplica a função verify a cada elemento do array idades. Se o resultado for true, o elemento será incluído no novo array.
+⦁	Filtro: O .filter() aplica a função verify a cada elemento do array idades. Se o resultado for true, o elemento será [Uploading index.html…]()
+incluído no novo array.
 
 ⦁	Exibição: O novo array filtrado (com idades maiores que o valor digitado) é exibido no HTML. (O metodo não executa a funçãocom elementos nulos e não altera o arrey original)
 
  
 ![image](https://github.com/user-attachments/assets/435c23f4-f43f-4472-a616-dcb8f104afd7)
 
-O "..." também conhecido como spread serve para concatenar dados de arrays, sejam elas variaveis ou retorno de funções:
+O "..." também conhecido como spread serve para concatenar dados de arrays, sejam elas variaveis ou retorno de funções, como visto nas seguintes linhas de código:
+
+![image](https://github.com/user-attachments/assets/0227041a-0de5-40b3-b275-04a102af4778)
+
+Resultando na concatenação dos dados em sequência:
+
+![image](https://github.com/user-attachments/assets/87c53b7d-f698-4ac9-b575-de0ad81f6c63)
+
+
