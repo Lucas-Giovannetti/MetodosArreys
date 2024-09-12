@@ -38,6 +38,8 @@ incluído no novo array.
  
 ![image](https://github.com/user-attachments/assets/435c23f4-f43f-4472-a616-dcb8f104afd7)
 
+## Spread(...)
+
 O "..." também conhecido como spread serve para concatenar dados de arrays, sejam elas variaveis ou retorno de funções, como visto nas seguintes linhas de código:
 
 ![image](https://github.com/user-attachments/assets/0227041a-0de5-40b3-b275-04a102af4778)
